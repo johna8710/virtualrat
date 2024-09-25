@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#experiment-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#experiment-area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#skinner-box {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #333;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+#sniffy, #lever, #food-dispenser {
+    position: absolute;
+}
+
+#lever {
+    width: 10px;
+    height: 30px;
+    background-color: red;
+    bottom: 10px;
+    right: 10px;
+}
+
+#food-dispenser {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    top: 10px;
+    left: 10px;
+}
+
+#controls {
+    width: 300px;
+}
+
+.control-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#data-display {
+    margin-top: 20px;
+}
+
+#chart {
+    width: 100%;
+    height: 300px;
+}
+
+#sniffy {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    z-index: 10;
+}

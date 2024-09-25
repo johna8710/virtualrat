@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sniffy the Virtual Rat Experiment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script type="module" src="./main.js"></script>
+</head>
+<body>
+    <div id="experiment-container">
+        <h1>Sniffy the Virtual Rat Experiment</h1>
+        
+        <div id="experiment-area">
+            <div id="skinner-box">
+                <div id="sniffy"></div>
+                <div id="lever"></div>
+                <div id="food-dispenser"></div>
+            </div>
+            
+            <div id="controls">
+                <h2>Experiment Controls</h2>
+                <div class="control-group">
+                    <label for="reinforcement-rate">Reinforcement Rate:</label>
+                    <input type="range" id="reinforcement-rate" min="0" max="1" step="0.1" value="0.5">
+                    <span id="reinforcement-value">0.5</span>
+                </div>
+                <div class="control-group">
+                    <label for="extinction-speed">Extinction Speed:</label>
+                    <input type="range" id="extinction-speed" min="0" max="0.1" step="0.01" value="0.05">
+                    <span id="extinction-value">0.05</span>
+                </div>
+                <button id="start-pause">Start Experiment</button>
+                <button id="export-data">Export Data</button>
+                <button id="manual-dispense">Manually Dispense Food</button>
+            </div>
+        </div>
+        
+        <div id="data-display">
+            <h2>Experiment Data</h2>
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+</body>
+</html>
